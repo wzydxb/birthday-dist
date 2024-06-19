@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0; padding: 0; }
+.answer { overflow: hidden; padding: 20px 0; }
+.large-box { border-radius: 10px; padding: 0 10px; background: linear-gradient( -30deg, #0084ad, #39beab); position: relative; }
+.ans-ul { margin: 0 auto; overflow: hidden; }
+.large-box .edge { width: 100vw; background: #ffdcdc; height: 14px; margin: 0px -10px 44px -10px; padding: 0px 10px; float: left; position: relative; }
+.large-box .edge div:nth-child(1),  .large-box .edge div:nth-child(2),  .large-box .edge div:nth-child(3),  .large-box .edge div:nth-child(4) { display: block; width: 14px; height: 14px; border-radius: 50px; background: #fff; border: 1px solid #FFFFFF; position: absolute; }
+.large-box .edge div:nth-child(1) { top: -22px; left: 50px; }
+.large-box .edge div:nth-child(2) { top: -22px; right: 50px; }
+.large-box .edge div:nth-child(3) { bottom: -22px; left: 50px; }
+.large-box .edge div:nth-child(4) { bottom: -22px; right: 50px; }
+.large-box .edge div:nth-child(5),  .large-box .edge div:nth-child(6) { display: block; width: 2px; height: 42px; background: #43c4c7; position: absolute; }
+.large-box .edge div:nth-child(5) { left: 57px; top: -14px; }
+.large-box .edge div:nth-child(6) { right: 57px; top: -14px; }
+.large-box p { color: #fff; margin: 20px 0;line-height: 24px; }
+.large-box li { color: #fff; }
+.large-box li a { color: #fffcb2; font-size: 16px; }
+.large-box a.ans-li { width: 40%; text-align: center; height: 40px; line-height: 40px; border-radius: 20px; margin: 20px 0 50px 0; display: block; border: 1px solid #FFFFFF !important; }
+.ans-no { background: rgba(0, 0, 0, 0); color: #fff; transition: .5s; }
+.large-box a.ans-li:active { background: #fff; color: #43c4c7; transition: .5s; }
+.ans-on { background: #fff !important; color: #43c4c7 !important; }
+.large-box .ans-y { float: left; }
+.large-box .ans-n { float: right; }
+.ans-again { width: 100% !important; }
+.mask-s { width: 100vw; float: left; margin: 0px; display: none; opacity: 0; }
+.mask-hide { position: fixed; top: 0; left: 0; height: 0px; width: 100%; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; background: #00FFFF; overflow: auto; opacity: 0; transition: .5s; }
+.test { width: 90vw; height: 40px; background: #0072FF; margin: 10px auto; color: #FFF; background: #39beab; border: none; border-radius: 10px; text-align: center; line-height: 40px; }
+.close { width: 30px; height: 30px; position: fixed; top: 20px; right: 20px; color: #fff; line-height: 30px; text-align: center; border-radius: 20px; background: rgba(0, 0, 0, .5);z-index: 99 }
+.mask-show { position: fixed; top: 0; left: 0; height: 100vh; width: 100%; background: #ffdcdc; overflow: auto; opacity: 1; transition: .5s; z-index: 999; }
+/*不可点击按钮样式*/
+#mask01 .large-box .ans-not { border: 1px solid #999 !important; color: #999999 !important; }
